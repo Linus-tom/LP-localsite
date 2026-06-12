@@ -22,7 +22,7 @@ const cases = [
     tag: 'SaaS B2B',
     title: 'Barber Pro',
     result: '47 barbearias ativas',
-    link: 'https://barber.aglabs.ia.br/',
+    link: 'https://barberflow.com.br/',
     img: `${base}barber-pro.png`,
   },
   {
@@ -30,7 +30,7 @@ const cases = [
     tag: 'Templates',
     title: 'Pack de Templates',
     result: '+50 modelos prontos',
-    link: 'https://templates.aglabs.ia.br/',
+    link: 'https://templates.aglabs.api.br/',
     img: `${base}templates-2.png`,
   },
   {
@@ -62,7 +62,7 @@ const cases = [
     tag: 'Institucional',
     title: 'AG Labs — Site Institucional',
     result: 'Presença digital completa',
-    link: 'https://aglabs.ia.br/',
+    link: 'https://aglabs.api.br/',
     img: `${base}aglabs-insitucional.png`,
   },
 ];
