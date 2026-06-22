@@ -30,7 +30,7 @@ const cases = [
     tag: 'Templates',
     title: 'Pack de Templates',
     result: '+50 modelos prontos',
-    link: 'https://templates.aglabs.api.br/',
+    link: 'https://templates.aglabs.ia.br/',
     img: `${base}templates-2.png`,
   },
   {
