@@ -1,5 +1,6 @@
 import { HeroParallax } from "@/components/HeroParallax";
 import { Portfolio } from "@/components/Portfolio";
+import { AboutAgLabs } from "@/components/AboutAgLabs";
 import { Pricing } from "@/components/Pricing";
 import { CinematicFooter } from "@/components/CinematicFooter";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -158,6 +159,7 @@ export default function Home() {
         <Portfolio />
         <HowItWorks />
         <SocialProof />
+        <AboutAgLabs />
         <Pricing />
         <FAQ />
         <CTAFinal />
