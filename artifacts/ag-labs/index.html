@@ -39,7 +39,6 @@
     <meta name="twitter:image:alt" content="AG Labs — Sites profissionais para negócios locais" />
 
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,7 +46,7 @@
     <link rel="preconnect" href="https://udcsokdtdqqdnoqozbxh.supabase.co" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Structured Data: Organization + WebSite + Service + FAQ (helps Google + AI engines) -->
+    <!-- Structured Data: Organization + WebSite + WebPage + Service + FAQ (helps Google + AI engines) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -57,10 +56,18 @@
           "@id": "https://lp.aglabs.ia.br/#organization",
           "name": "AG Labs",
           "url": "https://aglabs.ia.br/",
-          "logo": "https://lp.aglabs.ia.br/favicon.png",
-          "image": "https://lp.aglabs.ia.br/opengraph.jpg",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://lp.aglabs.ia.br/#logo",
+            "url": "https://lp.aglabs.ia.br/favicon.png",
+            "contentUrl": "https://lp.aglabs.ia.br/favicon.png",
+            "width": 800,
+            "height": 800,
+            "caption": "AG Labs"
+          },
+          "image": { "@id": "https://lp.aglabs.ia.br/#logo" },
           "description": "Agência digital que cria sites profissionais para negócios locais e automações de processos.",
-          "areaServed": "BR",
+          "areaServed": { "@type": "Country", "name": "Brasil" },
           "sameAs": [
             "https://www.instagram.com/ag_labs/",
             "https://www.linkedin.com/company/ag-labs"
@@ -69,7 +76,8 @@
             "@type": "ContactPoint",
             "telephone": "+55-64-99325-9857",
             "contactType": "sales",
-            "availableLanguage": ["Portuguese"]
+            "areaServed": "BR",
+            "availableLanguage": ["pt-BR"]
           }
         },
         {
@@ -81,24 +89,56 @@
           "publisher": { "@id": "https://lp.aglabs.ia.br/#organization" }
         },
         {
+          "@type": "WebPage",
+          "@id": "https://lp.aglabs.ia.br/#webpage",
+          "url": "https://lp.aglabs.ia.br/",
+          "name": "AG Labs — Sites Profissionais para Negócios Locais | No ar em 48h",
+          "description": "A AG Labs cria sites profissionais para negócios locais em tempo recorde: bonito, rápido, otimizado para o Google e com botão de WhatsApp. Domínio próprio incluso. Protótipo em até 48h, sem compromisso.",
+          "inLanguage": "pt-BR",
+          "isPartOf": { "@id": "https://lp.aglabs.ia.br/#website" },
+          "about": { "@id": "https://lp.aglabs.ia.br/#organization" },
+          "primaryImageOfPage": "https://lp.aglabs.ia.br/opengraph.jpg",
+          "mainEntity": { "@id": "https://lp.aglabs.ia.br/#service" }
+        },
+        {
           "@type": "Service",
           "@id": "https://lp.aglabs.ia.br/#service",
           "name": "Criação de Sites para Negócios Locais",
           "serviceType": "Criação de sites profissionais",
+          "url": "https://lp.aglabs.ia.br/",
           "provider": { "@id": "https://lp.aglabs.ia.br/#organization" },
-          "areaServed": "BR",
+          "areaServed": { "@type": "Country", "name": "Brasil" },
           "description": "Site profissional com domínio próprio, otimizado para o Google, responsivo e com botão de WhatsApp. Protótipo em até 48h.",
-          "offers": {
-            "@type": "Offer",
-            "price": "497",
-            "priceCurrency": "BRL",
-            "description": "Setup único do site completo com domínio incluso. Hospedagem e suporte por R$97/mês.",
-            "availability": "https://schema.org/InStock"
-          }
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Setup do site (pagamento único)",
+              "price": "497",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "description": "Site completo com domínio próprio incluso."
+            },
+            {
+              "@type": "Offer",
+              "name": "Hospedagem & Suporte",
+              "priceCurrency": "BRL",
+              "availability": "https://schema.org/InStock",
+              "description": "Hospedagem, suporte e 1 personalização por mês.",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "97",
+                "priceCurrency": "BRL",
+                "billingDuration": 1,
+                "unitCode": "MON"
+              }
+            }
+          ]
         },
         {
           "@type": "FAQPage",
           "@id": "https://lp.aglabs.ia.br/#faq",
+          "inLanguage": "pt-BR",
+          "isPartOf": { "@id": "https://lp.aglabs.ia.br/#webpage" },
           "mainEntity": [
             {
               "@type": "Question",

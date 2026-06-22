@@ -254,6 +254,18 @@ export function CinematicFooter() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  // Smooth-scroll for in-page anchors so navigation isn't jarring.
+  // External links (https://) fall through to default behavior.
+  const handleNavClick = (e: React.MouseEvent, href: string) => {
+    if (!href.startsWith("#")) return;
+    e.preventDefault();
+    if (href === "#") {
+      scrollToTop();
+      return;
+    }
+    document.querySelector(href)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: STYLES }} />
@@ -306,6 +318,7 @@ export function CinematicFooter() {
                 <MagneticButton
                   as="a"
                   href="#portfolio"
+                  onClick={(e: React.MouseEvent) => handleNavClick(e, "#portfolio")}
                   className="footer-glass-pill px-10 py-5 rounded-full text-foreground font-bold text-sm md:text-base flex items-center gap-3 group"
                 >
                   Ver Projetos
@@ -313,20 +326,20 @@ export function CinematicFooter() {
               </div>
 
               <div className="flex flex-wrap justify-center gap-3 md:gap-6 w-full mt-2">
-                <MagneticButton as="a" href="#" className="footer-glass-pill px-6 py-3 rounded-full text-muted-foreground font-medium text-xs md:text-sm hover:text-foreground">
+                <MagneticButton as="a" href="#" onClick={(e: React.MouseEvent) => handleNavClick(e, "#")} className="footer-glass-pill px-6 py-3 rounded-full text-muted-foreground font-medium text-xs md:text-sm hover:text-foreground">
                   Início
                 </MagneticButton>
-                <MagneticButton as="a" href="#portfolio" className="footer-glass-pill px-6 py-3 rounded-full text-muted-foreground font-medium text-xs md:text-sm hover:text-foreground">
+                <MagneticButton as="a" href="#portfolio" onClick={(e: React.MouseEvent) => handleNavClick(e, "#portfolio")} className="footer-glass-pill px-6 py-3 rounded-full text-muted-foreground font-medium text-xs md:text-sm hover:text-foreground">
                   Projetos
                 </MagneticButton>
-                <MagneticButton as="a" href="#sobre" className="footer-glass-pill px-6 py-3 rounded-full text-muted-foreground font-medium text-xs md:text-sm hover:text-foreground">
+                <MagneticButton as="a" href="https://aglabs.ia.br" target="_blank" rel="noopener noreferrer" className="footer-glass-pill px-6 py-3 rounded-full text-muted-foreground font-medium text-xs md:text-sm hover:text-foreground">
                   Sobre
                 </MagneticButton>
-                <MagneticButton as="a" href="#pricing" className="footer-glass-pill px-6 py-3 rounded-full text-muted-foreground font-medium text-xs md:text-sm hover:text-foreground">
+                <MagneticButton as="a" href="#pricing" onClick={(e: React.MouseEvent) => handleNavClick(e, "#pricing")} className="footer-glass-pill px-6 py-3 rounded-full text-muted-foreground font-medium text-xs md:text-sm hover:text-foreground">
                   Serviços
                 </MagneticButton>
-                <MagneticButton as="a" href="https://wa.me/5564993259857" className="footer-glass-pill px-6 py-3 rounded-full text-muted-foreground font-medium text-xs md:text-sm hover:text-foreground">
-                  WhatsApp
+                <MagneticButton as="a" href="https://templates.aglabs.ia.br" target="_blank" rel="noopener noreferrer" className="footer-glass-pill px-6 py-3 rounded-full text-muted-foreground font-medium text-xs md:text-sm hover:text-foreground">
+                  Templates
                 </MagneticButton>
               </div>
             </div>
