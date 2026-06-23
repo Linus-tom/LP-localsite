@@ -163,15 +163,15 @@ export function AboutAgLabs() {
         <div className="grid md:grid-cols-3 gap-8 mt-2">
           <div className="md:col-span-2">
             <h2 className="sm:text-4xl md:text-5xl text-2xl !leading-[110%] font-semibold font-display text-white mb-8">
-              <HeadingReveal text="Nascemos para tirar o operacional das costas das equipes." />
+              <HeadingReveal text="O ecossistema AG LABS une agentes, produtos e plataformas." />
             </h2>
 
             <Reveal className="grid md:grid-cols-2 gap-8">
               <Reveal delay={80} className="sm:text-base text-xs">
                 <p className="leading-relaxed text-justify text-muted-foreground">
-                  Nossa jornada começou identificando um problema real: equipes excelentes
-                  presas em processos manuais e repetitivos. Criamos a AG LABS para mudar isso —
-                  entregando sites e automações que realmente funcionam.
+                  A AG LABS vai além dos modelos. Construímos um ecossistema completo
+                  de agentes a APIs e plataformas que ajudam empresas a inovar com 
+                  inteligência artificial.
                 </p>
               </Reveal>
               <Reveal delay={160} className="sm:text-base text-xs">
