@@ -159,9 +159,9 @@ export default function Home() {
         <Portfolio />
         <HowItWorks />
         <SocialProof />
-        <AboutAgLabs />
         <Pricing />
         <FAQ />
+        <AboutAgLabs />
         <CTAFinal />
       </div>
       <CinematicFooter />
