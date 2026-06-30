@@ -142,7 +142,7 @@ export function AboutAgLabs() {
               </div>
               <div className="flex items-center gap-2 mb-2 sm:text-base text-xs">
                 <span className="font-bold text-primary">100+</span>
-                <span className="text-muted-foreground">automações entregues</span>
+                <span className="text-muted-foreground">websites entregues</span>
               </div>
             </div>
             <div className="lg:absolute right-0 bottom-16 flex lg:flex-col flex-row-reverse lg:gap-0 gap-4">
@@ -151,7 +151,7 @@ export function AboutAgLabs() {
                 <span className="text-white uppercase text-sm">ferramentas</span>
               </div>
               <div className="flex items-center gap-2 mb-2 text-xs">
-                <span className="font-bold text-primary">30%</span>
+                <span className="font-bold text-primary">+30%</span>
                 <span className="text-muted-foreground">redução de tempo operacional</span>
                 <span className="text-muted-foreground/40 lg:hidden block">|</span>
               </div>
@@ -163,14 +163,14 @@ export function AboutAgLabs() {
         <div className="grid md:grid-cols-3 gap-8 mt-2">
           <div className="md:col-span-2">
             <h2 className="sm:text-4xl md:text-5xl text-2xl !leading-[110%] font-semibold font-display text-white mb-8">
-              <HeadingReveal text="O ecossistema AG LABS une agentes, produtos e plataformas." />
+              <HeadingReveal text="O ecossistema AG LABS se une para você aparecer!" />
             </h2>
 
             <Reveal className="grid md:grid-cols-2 gap-8">
               <Reveal delay={80} className="sm:text-base text-xs">
                 <p className="leading-relaxed text-justify text-muted-foreground">
-                  A AG LABS vai além dos modelos. Construímos um ecossistema completo
-                  de agentes a APIs e plataformas que ajudam empresas a inovar com 
+                  A AG LABS vai além das páginas. Construímos um ecossistema completo
+                  de agentes a plataformas completas que ajudam empresas a inovar com 
                   inteligência artificial.
                 </p>
               </Reveal>
