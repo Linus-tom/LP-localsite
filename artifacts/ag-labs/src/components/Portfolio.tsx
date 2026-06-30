@@ -13,7 +13,7 @@ const cases = [
     sliderName: 'agente-ia',
     tag: 'IA / SaaS',
     title: 'Agente de IA Consultivo',
-    result: '98% de resolução automática',
+    result: 'Atendimento com IA',
     link: 'https://rag.aglabs.api.br/',
     img: `${base}agente-ia.png`,
   },
@@ -21,15 +21,15 @@ const cases = [
     sliderName: 'barber-pro',
     tag: 'SaaS B2B',
     title: 'Barber Pro',
-    result: '47 barbearias ativas',
-    link: 'https://barberflow.com.br/',
+    result: 'SaaS para barbearias',
+    link: 'https://barberias.com.br/',
     img: `${base}barber-pro.png`,
   },
   {
     sliderName: 'templates',
     tag: 'Templates',
     title: 'Pack de Templates',
-    result: '+50 modelos prontos',
+    result: 'Templates prontos',
     link: 'https://templates.aglabs.ia.br/',
     img: `${base}templates-2.png`,
   },
@@ -37,7 +37,7 @@ const cases = [
     sliderName: 'nutri',
     tag: 'Landing Page',
     title: 'LP Gabi Nutri',
-    result: '+ leads em poucos dias',
+    result: 'Landing page de nutrição',
     link: 'https://gabinutri.com.br/',
     img: `${base}lp-nutri.png`,
   },
@@ -45,24 +45,24 @@ const cases = [
     sliderName: 'agbooks',
     tag: 'E-commerce',
     title: 'AG Books',
-    result: 'Aumentes vendas no 1º mês',
+    result: 'Loja de e-books',
     link: 'https://loja.agmusic.cloud/',
     img: `${base}agbooks.png`,
   },
   {
     sliderName: 'ag-plataforma',
     tag: 'Web App',
-    title: 'AG Labs — Plataforma IA',
-    result: 'Automações 24/7 ativas',
+    title: 'AG LABS — Plataforma IA',
+    result: 'Plataforma de automações',
     link: 'https://rag.aglabs.api.br/app',
     img: `${base}ag-labs-2.png`,
   },
   {
     sliderName: 'ag-institucional',
     tag: 'Institucional',
-    title: 'AG Labs — Site Institucional',
-    result: 'Presença digital completa',
-    link: 'https://aglabs.api.br/',
+    title: 'AG LABS — Site Institucional',
+    result: 'Site institucional',
+    link: 'https://aglabs.ia.br/',
     img: `${base}aglabs-insitucional.png`,
   },
 ];
@@ -72,12 +72,12 @@ export function Portfolio() {
     <section className="py-24 bg-background relative" id="portfolio">
       <div className="max-w-5xl mx-auto px-4">
         <div className="mb-14">
-          <span className="text-primary text-sm font-bold uppercase tracking-widest mb-3 block">Cases de Sucesso</span>
+          <span className="text-primary text-sm font-bold uppercase tracking-widest mb-3 block">Projetos &amp; Demonstrações</span>
           <h2 className="text-3xl md:text-5xl font-bold font-display text-white mb-4">
-            Projetos que geram resultado
+            Projetos e modelos que criamos
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl">
-            Sites que não são só bonitos — são máquinas de vendas. Veja o que entregamos.
+            Modelos navegáveis que mostram o nível de site que entregamos — exemplos reais do que podemos criar para o seu negócio.
           </p>
         </div>
 

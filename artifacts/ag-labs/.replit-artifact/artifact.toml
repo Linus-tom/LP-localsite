@@ -1,6 +1,6 @@
 kind = "web"
 previewPath = "/"
-title = "AG Labs — Agência Digital"
+title = "AG LABS — Agência Digital"
 version = "1.0.0"
 id = "artifacts/ag-labs"
 router = "path"

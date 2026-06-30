@@ -1,4 +1,4 @@
-# robots.txt — AG Labs (https://lp.aglabs.ia.br)
+# robots.txt — AG LABS (https://lp.aglabs.ia.br)
 # Allow all standard search engines
 User-agent: *
 Allow: /

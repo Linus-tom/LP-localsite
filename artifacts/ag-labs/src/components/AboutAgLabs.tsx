@@ -94,7 +94,7 @@ export function AboutAgLabs() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`AG Labs no ${label}`}
+                  aria-label={`AG LABS no ${label}`}
                   className="flex items-center justify-center rounded-sm border border-border bg-white/[0.03] text-white/50 transition-all duration-200 hover:border-primary/40 hover:text-white md:h-8 md:w-8 h-6 w-6"
                 >
                   <Icon />
@@ -115,7 +115,7 @@ export function AboutAgLabs() {
                   transform: "scale(1.4)",
                 }}
               />
-              <svg className="w-full" width="100%" height="100%" viewBox="0 0 100 40" role="img" aria-label="Equipe AG Labs">
+              <svg className="w-full" width="100%" height="100%" viewBox="0 0 100 40" role="img" aria-label="Equipe AG LABS">
                 <defs>
                   <clipPath id="ag-clip" clipPathUnits="objectBoundingBox">
                     <path d="M0.0998072 1H0.422076H0.749756C0.767072 1 0.774207 0.961783 0.77561 0.942675V0.807325C0.777053 0.743631 0.791844 0.731953 0.799059 0.734076H0.969813C0.996268 0.730255 1.00088 0.693206 0.999875 0.675159V0.0700637C0.999875 0.0254777 0.985045 0.00477707 0.977629 0H0.902473C0.854975 0 0.890448 0.138535 0.850165 0.138535H0.0204424C0.00408849 0.142357 0 0.180467 0 0.199045V0.410828C0 0.449045 0.0136283 0.46603 0.0204424 0.469745H0.0523086C0.0696245 0.471019 0.0735527 0.497877 0.0733523 0.511146V0.915605C0.0723903 0.983121 0.090588 1 0.0998072 1Z" />
@@ -194,7 +194,7 @@ export function AboutAgLabs() {
               </Reveal>
               <Reveal delay={220}>
                 <p className="text-white font-medium mb-4 text-sm">
-                  Quer conhecer tudo o que a AG Labs faz pelo seu negócio?
+                  Quer conhecer tudo o que a AG LABS faz pelo seu negócio?
                 </p>
               </Reveal>
               <Reveal delay={300}>
