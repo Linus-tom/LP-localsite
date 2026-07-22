@@ -152,7 +152,7 @@ export function AboutAgLabs() {
               </div>
               <div className="flex items-center gap-2 mb-2 text-xs">
                 <span className="font-bold text-primary">+30%</span>
-                <span className="text-muted-foreground">redução de tempo operacional</span>
+                <span className="text-muted-foreground">presença digital</span>
                 <span className="text-muted-foreground/40 lg:hidden block">|</span>
               </div>
             </div>
