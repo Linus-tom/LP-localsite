@@ -183,12 +183,25 @@
     </script>
   </head>
   <body>
-    <div id="root"></div>
-    <noscript>
-      AG LABS cria sites profissionais para negócios locais em tempo recorde — bonito, rápido,
-      otimizado para o Google e com botão de WhatsApp. Domínio próprio incluso e protótipo em até 48h.
-      Fale com a gente: https://wa.me/5564993259857
-    </noscript>
+    <!-- O texto de partida sai de <noscript> e passa a viver dentro do #root.
+         Em <noscript> ele só valia para quem desliga JavaScript: o Google
+         ignora o bloco e os motores de resposta o tratam como sinal fraco.
+         Dentro do #root é conteúdo de primeira classe para qualquer crawler
+         que não executa JS — e o React o descarta ao montar, porque
+         createRoot limpa os filhos do contêiner.
+         A <h1> aqui repete a do herói em src/components/HeroParallax.tsx;
+         mexeu lá, mexe aqui. -->
+    <div id="root">
+      <main style="max-width:820px;margin:0 auto;padding:48px 24px;font-family:system-ui,sans-serif">
+        <h1>Seu negócio merece estar online</h1>
+        <p>
+          A AG LABS cria sites profissionais para negócios locais em tempo recorde:
+          bonito, rápido, otimizado para o Google e com botão de WhatsApp. Domínio
+          próprio incluso e protótipo em até 48h. Menos papo, mais resultado.
+        </p>
+        <p><a href="https://wa.me/5564993259857">Quero meu site</a></p>
+      </main>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
